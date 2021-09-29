@@ -15,7 +15,7 @@ export function getListOfFruitsForStudentsWhoseFavouriteColorIsBlue(students) {
 const idLookup = {
   1: 'student1@example.com',
   2: 'student2@example.com',
-  3: 'student3@example.com',
+  99: 'student99@example.com',
 };
 
 async function fetchContactDetails(id) {
@@ -28,7 +28,7 @@ async function fetchContactDetails(id) {
 }
 
 
-export function attachContactDetailsToStudents(students) {
+export async function attachContactDetailsToStudents(students) {
     // TODO implement the function 
     //Use the fetchContactDetails function to get the email address for each student
 }

@@ -1,4 +1,4 @@
-import { addClassesToStudent, getListOfFruitsForStudentsWhoseFavouriteColorIsBlue, attachContactDetailsToStudents} from ".";
+import { addClassesToStudent,createMapOfStudents,  getListOfFruitsForStudentsWhoseFavouriteColorIsBlue, attachContactDetailsToStudents} from ".";
 
 describe("createMapOfStudents", () => {
     it ("Transforms the data to the right shape", () => {
@@ -14,7 +14,7 @@ describe("createMapOfStudents", () => {
                 lastName: "Alison", 
             },
             {
-                id: "3", 
+                id: "99", 
                 firstName: "Cindy", 
                 lastName: "Cindyson", 
             }
@@ -31,8 +31,8 @@ describe("createMapOfStudents", () => {
                 firstName: "Alice", 
                 lastName: "Alison", 
             },
-            "3": {
-                id: "3", 
+            "99": {
+                id: "99", 
                 firstName: "Cindy", 
                 lastName: "Cindyson", 
             }
@@ -64,7 +64,7 @@ describe("getListOfFruitsForStudentsWhoseFavouriteColorIsBlue", () => {
                 favoriteFruit: "apple", 
             },
             {
-                id: "3", 
+                id: "99", 
                 firstName: "Cindy", 
                 lastName: "Cindyson",
                 favoriteColor: "red", 
@@ -98,7 +98,7 @@ describe("attachContactDetailsToStudents", () => {
                 lastName: "Alison", 
             },
             {
-                id: "3", 
+                id: "99", 
                 firstName: "Cindy", 
                 lastName: "Cindyson", 
             }
@@ -120,10 +120,10 @@ describe("attachContactDetailsToStudents", () => {
     
             },
             {
-                id: "3", 
+                id: "99", 
                 firstName: "Cindy", 
                 lastName: "Cindyson", 
-                emailAddress: "student3@example.com", 
+                emailAddress: "student99@example.com", 
             }
         ]; 
     
